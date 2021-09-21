@@ -17,7 +17,7 @@ def draw(list, BG):
     pygame.display.update()
 
 def main():
-    config = loadCFG("config.json")
+    config = loadCFG("./config.json")
 
     clock = pygame.time.Clock()
     BG = config["BG"]
