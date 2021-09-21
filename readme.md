@@ -1,5 +1,9 @@
 # osu! key overlay
 
+![Alt Text](https://media.giphy.com/media/3WHiCfbNladoIuboDt/giphy.gif?cid=790b761176d07add71d0121bd400f951599f4c973ae666df&rid=giphy.gif&ct=g)
+![Alt Text](https://media.giphy.com/media/cxz37mGAgu95eSGjiQ/giphy.gif?cid=790b7611b337c4c7123ace954a3cde39fe8ef4263f6f9ff6&rid=giphy.gif&ct=g)
+![Alt Text](https://media.giphy.com/media/YGsFVhfzqI51jE0vKt/giphy.gif?cid=790b7611cb5b669a4111bd88891bc9ffab8defa610780213&rid=giphy.gif&ct=g)
+
 ## Todo
 - [ ] Key Distribution Display
   
