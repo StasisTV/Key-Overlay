@@ -2,6 +2,9 @@
     "left_key": "Z",
     "right_key": "X",
     "BG": [0, 255, 29],
-    "key_color": [255, 255, 255],
-    "speed": 4
+    "key_color": [53, 60, 79],
+    "speed": 4,
+    "border": false,
+    "border_color": [53, 60, 79],
+    "border_width": 15
 }

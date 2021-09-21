@@ -1,6 +1,8 @@
 import pygame
 import keyboard
 
+pygame.font.init()
+
 class overBtn:
     pressed = False
     level = 0
@@ -30,6 +32,12 @@ class overBtn:
     def draw(self, WIN):
         rect = pygame.Rect(self.pos[0] + (self.level/2), self.pos[1] + (self.level/2) , self.size - self.level, self.size - self.level)
         pygame.draw.rect(WIN, self.color, rect, self.width)
+
+        text = pygame.font.SysFont('Sans Serif', 60 - self.level).render(self.key, True, self.color)
+        text_rect = text.get_rect()
+        text_rect.center = rect.center
+        WIN.blit(text, text_rect)
+
         #if button has wave draw wave
         if self.wave != None:
             self.wave.draw(WIN)

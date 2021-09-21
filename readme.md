@@ -2,7 +2,7 @@
 
 Todo
 - [X] config.json
-- [ ] Key Text
-- [ ] Border
+- [X] Key Text
+- [X] Border
 - [ ] Wave Timers
 - [ ] Key Distribution Measure
