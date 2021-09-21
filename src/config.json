@@ -6,5 +6,7 @@
     "speed": 4,
     "border": false,
     "border_color": [53, 60, 79],
-    "border_width": 15
+    "border_width": 15,
+    "timers": false,
+    "timer_threshold": 400
 }

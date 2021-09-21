@@ -10,10 +10,12 @@ pygame.display.set_caption("Key Overlay")
 def draw(list, BG, BORDER):
     WIN.fill(BG)
 
+    #loop through all items in draw list and draw
     for item in list:
         if item != None:
             item.draw(WIN)
 
+    #if border is enabled draw border
     if(BORDER[0]):
         rect = pygame.Rect(0, 0, 300, 700)
         pygame.draw.rect(WIN, BORDER[1], rect, BORDER[2])
@@ -51,7 +53,7 @@ def main():
                 if button.wave == None:
                     pos = [button.pos[0], button.pos[1]]
                     size = button.size
-                    button.wave = keyWave(pos, size, config["speed"], config["key_color"])
+                    button.wave = keyWave(pos, size, config["speed"], config["key_color"], config["timers"], config["timer_threshold"])
 
                 button.wave.tick()
             else:

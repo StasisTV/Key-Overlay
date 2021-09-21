@@ -4,5 +4,5 @@ Todo
 - [X] config.json
 - [X] Key Text
 - [X] Border
-- [ ] Wave Timers
+- [X] Wave Timers
 - [ ] Key Distribution Measure
