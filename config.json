@@ -1,0 +1,7 @@
+{
+    "left_key": "Z",
+    "right_key": "X",
+    "BG": [0, 255, 29],
+    "key_color": [255, 255, 255],
+    "speed": 4
+}
