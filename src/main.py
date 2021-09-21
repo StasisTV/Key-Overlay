@@ -17,6 +17,7 @@ def draw(list, BG):
     pygame.display.update()
 
 def main():
+    #settings
     config = loadCFG("./config.json")
 
     clock = pygame.time.Clock()
@@ -39,22 +40,27 @@ def main():
 
         for button in buttons:
             button.tick()
+
             if button.pressed:
+                #if button does not have wave create wave
                 if button.wave == None:
                     pos = [button.pos[0], button.pos[1]]
                     size = button.size
-                    button.wave = keyWave(pos, size, config["speed"])
+                    button.wave = keyWave(pos, size, config["speed"], config["key_color"])
 
                 button.wave.tick()
             else:
+                #cut off button's wave if key is not pressed
                 if button.wave != None:
                     button.wave.cut = True
                     waves.append(button.wave)
                     button.wave = None
 
+        #tick all waves
         for i, wave in enumerate(waves):
             wave.tick()
             
+            #if wave is offscreen delete
             if wave.out:
                 del waves[i]
 
@@ -62,6 +68,7 @@ def main():
 
     pygame.quit()
 
+#load json file and return
 def loadCFG(path):
     file = open(path, "r")
     data = json.load(file)
