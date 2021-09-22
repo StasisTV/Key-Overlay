@@ -40,7 +40,7 @@ class keyWave:
 
             #if wave time above or equal to threshhold display timer
             if self.threshold <= self.time:
-                text = pygame.font.SysFont('Sans Serif', 50).render(str(round(self.time / 1000, 2)), True, (255 - self.color[0], 255 - self.color[1], 255 - self.color[2]))
+                text = pygame.font.Font('font.ttf', 50).render(str(round(self.time / 1000, 2)), True, (255 - self.color[0], 255 - self.color[1], 255 - self.color[2]))
                 text_rect = text.get_rect()
                 text_rect.center = rect.center
                 WIN.blit(text, text_rect)

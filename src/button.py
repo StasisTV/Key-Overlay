@@ -35,7 +35,7 @@ class overBtn:
         pygame.draw.rect(WIN, self.color, rect, self.width)
 
         #Draw key text in center of button
-        text = pygame.font.SysFont('Sans Serif', 60 - self.level).render(self.key, True, self.color)
+        text = pygame.font.Font('font.ttf', 60 - self.level).render(self.key, True, self.color)
         text_rect = text.get_rect()
         text_rect.center = rect.center
         WIN.blit(text, text_rect)
